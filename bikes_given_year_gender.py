@@ -14,7 +14,7 @@ def app(data):
         title=None, labelOrient="bottom", labelPadding=10, labelFontSize=20)),
       x=alt.X('Gender', axis=None),
       y=alt.Y("count(Year):O", axis=alt.Axis(title="Number of bikes given out", titlePadding=10)),
-      color=alt.Color("Gender"),
+      color=alt.Color("Gender", scale=alt.Scale(scheme="dark2")),
       opacity=alt.condition(selection, alt.value(1), alt.value(0.2)),
     )
     .properties(title="Number of Bikes Given Out Per Year by Gender", height=350, width=100)
