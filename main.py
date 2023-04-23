@@ -15,7 +15,7 @@ st.set_page_config(
 
 # Get url where data is stored
 data_url = 'https://docs.google.com/spreadsheets/d/10DHQegH0nN9Hk-WYOBlDzfsPQC1ZILiY9-l3WRvakVQ/\
-gviz/tq?tqx=out:csv&sheet=Copy%20of%20Given%20out'
+gviz/tq?tqx=out:csv&sheet=Given%20out%20(cleaned)'
 
 # Read data into dataframe
 data = pd.read_csv(data_url)
